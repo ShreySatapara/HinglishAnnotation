@@ -1,4 +1,4 @@
-proxy = 'http://127.0.0.1:5000'
+proxy = 'https://hasocgermanannotation.el.r.appspot.com'
 
 async function displayTweetForAnnotate(tweet_id) {
     //document.getElementById("submitlabels").style.display = 'block';

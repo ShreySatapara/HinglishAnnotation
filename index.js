@@ -117,8 +117,8 @@ async function displayTweetForAnnotate(tweet_id) {
 
                 }
 
-                tab+=`</div>`
-            }
+               
+            } tab+=`</div>`
         }
 
 

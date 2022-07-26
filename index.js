@@ -60,7 +60,7 @@ async function displayTweetForAnnotate(tweet_id) {
                     <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${comm.tweet_id}" value="CHOF" >CHOF</label>
                     <label class="btn btn-success form-check-label">
                     <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${comm.tweet_id}" value="NONE">NONE</label>
-                    </div></li></div>`
+                    </div></li>`
                 } else if (labels[comm.tweet_id] === 'CHOF') {
                     tab += `<div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-danger form-check-label mr-3">
@@ -69,7 +69,7 @@ async function displayTweetForAnnotate(tweet_id) {
                         <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${comm.tweet_id}" value="CHOF" checked>CHOF</label>
                         <label class="btn btn-success form-check-label">
                         <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${comm.tweet_id}" value="NONE" >NONE</label>
-                        </div></li></div>`
+                        </div></li>`
                 } else {
                     tab += `<div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-danger form-check-label mr-3">
@@ -78,7 +78,7 @@ async function displayTweetForAnnotate(tweet_id) {
                         <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${comm.tweet_id}" value="CHOF" >CHOF</label>
                         <label class="btn btn-success form-check-label">
                         <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${comm.tweet_id}" value="NONE" checked>NONE</label>
-                        </div></li></div>`
+                        </div></li>`
                 }
                 if ('replies' in comm) {
                     for (let rep of comm.replies) {
@@ -117,7 +117,7 @@ async function displayTweetForAnnotate(tweet_id) {
 
                 }
 
-
+                tab+=`</div>`
             }
         }
 

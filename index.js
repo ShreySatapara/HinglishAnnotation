@@ -92,7 +92,7 @@ async function displayTweetForAnnotate(tweet_id) {
                         <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${rep.tweet_id}" value="CHOF" >CHOF</label>
                         <label class="btn btn-success form-check-label">
                         <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${rep.tweet_id}" value="NONE">NONE</label>
-                        </div></li></div>`
+                        </div></li>`
                         } else if (labels[rep.tweet_id] === 'CHOF') {
                             tab += `<div class="btn-group" data-toggle="buttons">
                             <label class="btn btn-danger form-check-label mr-3">
@@ -101,7 +101,7 @@ async function displayTweetForAnnotate(tweet_id) {
                             <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${rep.tweet_id}" value="CHOF" checked>CHOF</label>
                             <label class="btn btn-success form-check-label">
                             <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${rep.tweet_id}" value="NONE" >NONE</label>
-                            </div></li></div>`
+                            </div></li>`
                         } else {
                             tab += `<div class="btn-group" data-toggle="buttons">
                             <label class="btn btn-danger form-check-label mr-3">
@@ -110,7 +110,7 @@ async function displayTweetForAnnotate(tweet_id) {
                             <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${rep.tweet_id}" value="CHOF" >CHOF</label>
                             <label class="btn btn-success form-check-label">
                             <input class="form-check-input" onchange="addLabel(this.name,this.value)" type="radio" name="${rep.tweet_id}" value="NONE" checked>NONE</label>
-                            </div></li></div>`
+                            </div></li>`
                         }
 
                     }

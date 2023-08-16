@@ -1,4 +1,4 @@
-proxy = 'https://hasocgermanannotation.el.r.appspot.com'
+proxy = 'https://englishannotationreview.el.r.appspot.com'
 
 async function displayTweetForAnnotate(tweet_id) {
     //document.getElementById("submitlabels").style.display = 'block';
